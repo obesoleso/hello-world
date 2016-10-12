@@ -4,7 +4,7 @@ e normalizza i valori dell'ultima colonna a 255 tra tutti i file cosi
 che polyworks possa leggere l'intensita
 """
 
-import glob
+import glob # https://docs.python.org/2/library/glob.html
 import time
 
 
