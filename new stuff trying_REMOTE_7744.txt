@@ -5,9 +5,5 @@ ok adesso questo finisce su un nuovo branch :)
 
 ok sono sul nuovo branch? optimus no?? ho modificato questa linea :))))
 
-<<<<<<< HEAD
-e cos^???
-=======
 
 ok sono di nuovo sul master???
->>>>>>> master
