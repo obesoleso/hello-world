@@ -4,7 +4,7 @@ E' da utilizzare perche' alcuni file xyz che esportiamo hanno l'indice come prim
 """
 
 import glob
-folder = "D:/Workspace_NUVOLE/user-data/bbb/"
+folder = "D:/Workspace_Poly/user-data/Castelli_nuvole/"
 ext = ".xyz"
 files_in_folder =  glob.glob(folder + "*" + ext)
 print files_in_folder

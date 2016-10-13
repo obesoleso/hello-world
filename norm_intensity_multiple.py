@@ -9,7 +9,7 @@ import time
 
 
 # folder = "D:/Workspace_Files/user-data/test/"
-folder = "D:/Workspace_NUVOLE/user-data/bbb/" # path del file
+folder = "D:/Workspace_Poly/user-data/Castelli_nuvole/" # path del file
 ext = (".xyz") # estensione dei file
 files_in_folder = glob.glob(folder + "*" + ext) # elenca tutti i file all'interno della cartella con quella determinata estensione
 print files_in_folder # printa tutti i file riconosciuti
@@ -23,6 +23,8 @@ start = time.clock()
 # il codice prima individua il fattore di normalizzazione della intensita all'interno di un gruppo di file e poi
 # lo applica a tutti quanti...
 # individua pertanto l'intensita piu elevata all'interno del gruppo
+
+print "checking the max intensity..."
 
 for items in files_in_folder:
     f = open(items, "r") # apre il file da cui leggere
@@ -39,6 +41,8 @@ fattore = 255 / float(max_intensity) # normalizza la max_intensity a 255 ... fat
 print "intensity factor is " + str(fattore) # printa il fattore di normalizzazione
 
 f.close() # chiude il file
+
+print "now im creating the new files..."
 
 for items in files_in_folder:
     f = open(items, "r") # apre il file da cui leggere
