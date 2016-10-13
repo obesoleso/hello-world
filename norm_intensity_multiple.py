@@ -9,7 +9,7 @@ import time
 
 
 # folder = "D:/Workspace_Files/user-data/test/"
-folder = "D:/Workspace_Files/user-data/bbb/" # path del file
+folder = "D:/Workspace_NUVOLE/user-data/bbb/" # path del file
 ext = (".xyz") # estensione dei file
 files_in_folder = glob.glob(folder + "*" + ext) # elenca tutti i file all'interno della cartella con quella determinata estensione
 print files_in_folder # printa tutti i file riconosciuti
@@ -47,7 +47,7 @@ for items in files_in_folder:
         splitted_line = line.split() # splitta la linea e la trasforma in una lista
         # print splitted_line[:-1] # stampa l'ultimo termine
         intensity_normed = (int(splitted_line[-1]) * fattore) # moltplica l'intensita per il fattore di normalizzazione
-        g.write(("\t".join(splitted_line[1:-1]) + "\t" + str(int(intensity_normed)) + "\n")) # converto prima in int e poi in str per fare l'arrotondamento
+        g.write((" ".join(splitted_line[1:-1]) + " " + str(int(intensity_normed)) + "\n")) # converto prima in int e poi in str per fare l'arrotondamento
         # il \t e' cio' che viene inserito in mezzo ai singoli termini che erano una volta splittati ...  a questo si concatena la nuova intensita e poi si manda a capo con \n
     g.close() # chiude il file appena creato
     f.close() # chiude il file che e' stato letto
